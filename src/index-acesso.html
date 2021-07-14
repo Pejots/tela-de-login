@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloP.css">
+    <script src="https://kit.fontawesome.com/a89ad48aff.js" crossorigin="anonymous"></script>
+    <title>Primeiro Acesso</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title titulobv"> Esse é seu primeio <br> acesso!</h2>
+                <p class="description">Por favor, digite seu email<br> e confirme sua senha</p>
+                </div>
+                <div class="second-column">
+                    <p class="primeiroacesso">Primeiro acesso</p>
+                    <form class="form" name="formulario" onsubmit="valida()">
+                    <label class="label-input" for="">
+                    <i class="fas fa-envelope icon-modify"></i>
+                    <input type="email" placeholder="Email" name="email">
+                    </label>
+                    <label class="label-input"  for="">
+                    <i class="fas fa-user-lock icon-modify"></i>
+                    <input type="password" placeholder="Senha" name="senha">
+                    </label>
+                    <label  class="label-input" for="">
+                    <i class="fas fa-user-lock icon-modify"></i>
+                    <input type="password" placeholder="Confirme sua Senha" name="confirme">
+                    </label>
+                    <input type="button" value="confirmar" onclick="Confirmar(this.form)" class="btn">
+                    <a href="login.html" class="cancelar">Cancelar</a>
+                   </form>
+            </div> 
+       
+        </div>
+<script>
+    function Confirmar(form){
+        if(form.email.value == "marco.jeunon@gmail.com" && form.senha.value == "010203040506" && form.confirme.value == "010203040506"){
+             alert('Senha enviada para o email marc********@gmail.com')
+        } else {
+            form.email.value =""
+            form.senha.value =""
+            form.confirme.value =""
+            alert('Preencha os dados corretamente')
+            }
+        }
+    </script>
+</body>
+</html>

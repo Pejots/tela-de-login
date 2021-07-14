@@ -1,0 +1,62 @@
+.container{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.grade{
+    background-color: white;
+    border-radius: 15px;
+    width: 550px;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#logout{
+    position:absolute; 
+    top: 30px;;
+    right: 40px;
+    background-color: teal;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    color: white; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#logout:hover{
+    background-color: #dadada ;
+    color: teal;
+}
+
+
+.btn{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:teal;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.btn:hover{
+background-color: #dadada;
+color: teal;
+}
+.btn:active{
+background-color: #ff08008a;
+box-shadow: 0 5px rgb(0, 0, 0);
+transform: translateY(4px);
+}

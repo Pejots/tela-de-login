@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/a89ad48aff.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title titulobv"> Seja Bem-vindo! </h2>
+                <p class="description"> Venha fazer parte da nossa família</p>
+                
+            </div>
+            <div class="second-column">
+                <h2 class="title-second"> Login </h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="https://www.facebook.com/esporteinterativo/videos/10158290513703504/?ref=tahoe">
+                        <li class="item-social-media">
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                        </a>
+                        <a class="link-social-media" href="https://accounts.google.com/signin/v2/identifier?hl=pt-BR&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        <li class="item-social-media">
+                            <i class="fab fa-google-plus-g"></i>
+                        </li>
+                        </a>
+                        <a class="link-social-media" href="https://br.linkedin.com/">
+                        <li class="item-social-media">
+                            <i class="fab fa-linkedin-in"></i>
+                        </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="entrecomseuemail">ou entre com seu email</p>
+                <form class="form" name="formulario" >
+                    <label class="label-input" for="">
+                        <i class="fas fa-envelope icon-modify"></i>
+                    <input type="email" placeholder="Email" id="busca" name="email">
+                    </label>
+                    <label class="label-input"  for="">
+                        <i class="fas fa-user-lock icon-modify"></i>
+                    <input type="password" placeholder="Senha" id="buscas" name="senha">
+                    </label>
+                    <a  class="esquecims" href="acesso.html">Primeiro acesso</a>
+                    <input type="button" value="Entrar" onclick="Entrar(this.form)" class="btn">
+                    <p id="res"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+ <script>
+ function Entrar(form){
+        if(form.email.value == "marco.jeunon@gmail.com" && form.senha.value == "010203040506"){
+         location = "cadastro.html"
+     }  else {
+         form.email.value=""
+         form.senha.value=""
+         alert('Preencha os campos e verifique os dados')
+         res.innerHTML = "Email e/ou senha inválidos"
+     }
+     } 
+</script>
+   
+</body>
+</html>
